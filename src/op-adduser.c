@@ -211,7 +211,7 @@ static int32_t addclub(Ceo__AddUser *in, Ceo__AddUserResponse *out) {
         return response_message(out, EKERB, "unable to clear principal %s", in->username);
 
     if ((user_stat = ceo_add_user(in->username, ldap_users_base, "club", in->realname, homedir,
-            NULL, club_shell, id, NULL)))
+            club_shell, id, NULL)))
         return response_message(out, ELDAP, "unable to create ldap account %s", in->username);
     response_message(out, 0, "successfully created ldap account");
 
