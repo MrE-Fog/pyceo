@@ -9,7 +9,7 @@ class IntroPage(WizardPanel):
             urwid.Text( "Joining the Computer Science Club" ),
             urwid.Divider(),
             urwid.Text( "CSC membership is $2.00 per term. Please ensure "
-                        "the fee is deposited into the safe before continuing." ),
+                        "the fee is deposited into the cup before continuing." ),
         ]
     def focusable(self):
         return False
@@ -27,6 +27,15 @@ class ClubIntroPage(WizardPanel):
                         "for more information. Club accounts do not have "
                         "passwords, and exist primarily to own club data. "
                         % "http://csclub.uwaterloo.ca/~clubid/" ),
+        ]
+    def focusable(self):
+        return False
+
+class ClubNoPayPage(WizardPanel):
+    def init_widgets(self):
+        self.widgets = [
+            urwid.Text( "Club representative accounts are free. Please ensure "
+                        "that no money was paid for this account." ),
         ]
     def focusable(self):
         return False

@@ -1,3 +1,10 @@
+ceo (0.5.25) stable; urgency=low
+
+  * Replace mention of the safe with the cup.
+  * Remind users that club accounts are free.
+
+ -- Sean Hunt <scshunt@csclub.uwaterloo.ca>  Tue, 22 Jul 2014 14:20:16 -0400
+
 ceo (0.5.24ubuntu5) saucy; urgency=low
 
   * Packaging for saucy.
